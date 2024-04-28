@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Assistant - HOME</title>
+    <title>Book a Trip</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="form.css">
@@ -63,7 +63,9 @@
                 <option value="SFR">San Francisco, US</option>
                 <option value="SPL">Sao Paulo, Brazil</option>
             </optgroup>
-        </select><br><br>
+        </select><br>
+        <input type="date" name="date" id="date" required><br>
+<br><br>
     <button>Book Flight</button>
     </form>
     <a href="priceCheck.php" target="_blank"><button>Check Prices</button></a><br>
@@ -169,6 +171,17 @@
                 toSelect.value = toParam;
             }
         });
+    </script>
+    <script>
+        const dtToday = new Date();
+        dtToday.setDate(dtToday.getDate() + 3);
+        const month = dtToday.getMonth() + 1;
+        const day = dtToday.getDate();
+        const year = dtToday.getFullYear();
+
+        const minDate = `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day}`;
+
+        document.getElementById('date').setAttribute('min', minDate);
     </script>
 </body>
 </html>

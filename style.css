@@ -4,24 +4,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .main {
     display: flex;
     justify-content: space-around;
 }
-
 .content {
     border: 1px solid blue;
     width: 25%;
     margin: 10px;
 }
-
 a {
     color: rgb(48, 76, 124);
     text-decoration: none;
 }
-
-/* Base button styles */
 button {
     display: inline-block;
     padding: 10px 20px;
@@ -36,13 +31,9 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-/* Hover effect */
 button:hover {
     background-color: #0056b3;
 }
-
-/* Active (clicked) state */
 button:active {
     background-color: #003d7a;
 }

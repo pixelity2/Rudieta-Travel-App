@@ -32,6 +32,7 @@
             <li>Choose CONTINUE WITHOUT CONVERSION when withdrawing in ATMs, because ATMs have high conversion fees (around 9% markup compared to banks).</li>
             <li>Choose to pay by CARD instead of withdrawing money from the ATM, as you will save a lot of money.</li>
             <li>Regularly check conversion rates.</li>
+            <li>When possible use Contactless ATMs.</li>
         </ul>
         <h2>Internet Tips</h2>
         <ul>

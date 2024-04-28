@@ -10,6 +10,7 @@ $flyers = $_GET['flyers'];
 $fullName = $_GET['fullName'];
 $email = $_GET['email'];
 $phoneNumber = $_GET['phoneNumber'];
+$date = $_GET['date'];
 
 $prices = array(
     'SKP' => array(
@@ -73,26 +74,32 @@ $price = $priceModified;
 
 $checkout_session = \Stripe\Checkout\Session::create([
     "mode" => "payment",
-    "success_url" => "http://localhost/rudieta-travel-app/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to",
+    "success_url" => "http://localhost/rudieta-travel-app/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to&date=$date",
     "locale" => "auto",
     "line_items" => [
         [
             "quantity" => $flyers,
             "price_data" => [
                 "currency" => "eur",
-                "unit_amount" => $price * 100,
+                "unit_amount" =>  $price * 100,
                 "product_data" => [
                     "name" => "Travel $from - $to",
-                    'description' => "Travel: 
-                    Test Card: 
-                    4000 0099 9000 0005 
-                    03/2027 
-                    123"
-                ]
-            ]
-        ]      
-    ]
-]);
+                    'description' => 'Travel'
+                ],
 
+                ]],
+            ],
+            'custom_fields' => [
+                [
+                  'key' => 'fullName',
+                  'label' => [
+                    'type' => 'custom',
+                    'custom' => 'Full Name',
+                  ],
+                  'type' => 'text',
+                ],
+              ],
+              'phone_number_collection' => ['enabled' => true],
+]);
 http_response_code(303);
 header("Location: " . $checkout_session->url);

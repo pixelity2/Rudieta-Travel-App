@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Assistant - HOME</title>
+    <title>Home</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,7 @@
             <h2>Explore the culture and nature of Asia</h2>
             <a href="asia/antalya-tr.html"><h3>Antalya, Turkiye</h3></a>
             <a href="asia/tokyo-jp.html"><h3>Tokyo, Japan</h3></a>
-            <a href="asia/everest-np.html"><h3>Mt. Everest, Nepal</h3></a>
+            <a href="asia/mumbai-in.html"><h3>Mumbai, India </h3></a>
             <a href="asia/seoul-sk.html"><h3>Seoul, S. Korea</h3></a>
             <a href="asia/bejing-cn.html"><h3>Bejing, China</h3></a>
         </div>
@@ -49,8 +49,8 @@
             <a href="america/buenoaires-ar.html"><h3>Bruno aires, Argentina</h3></a>
         </div>
     </div>
-
-    <a href="book.php"><button>Start Traveling</button></a>
+<br>
+    <a href="book.php" target="_blank"><button>Start Traveling</button></a>
 
 </body>
 </html>
