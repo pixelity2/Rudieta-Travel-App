@@ -4,7 +4,6 @@ A website to book trips from 3 destinations to 15 destinations with affordable p
 
 Uses:
     Stripe https://stripe.com/ to proccess payments.
-    
     Composer https://getcomposer.org/ to use Stripe API.
 
 Note: This wont actually book trips, it's not linked to platform.
