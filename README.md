@@ -8,3 +8,8 @@ Uses:
 
 Note: This wont actually book trips, it's not linked to platform.
 Payments are TEST and are refunded within 28 days.
+
+Test banking cards
+
+4000 0099 9000 0039
+03/27 123
