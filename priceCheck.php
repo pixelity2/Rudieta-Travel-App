@@ -6,6 +6,7 @@
     <title>Travel Assistant - HOME</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div class="navbar">
@@ -18,6 +19,7 @@
     </div>
     <h1>Rudieta Travel Price Checker</h1>
     <br>
+    <form action="" method="get">
         <label for="from">FROM: </label><br>
         <select name="from" id="from">
             <optgroup label="Near You Airports">
@@ -116,9 +118,9 @@
             'SPL' => array(7209, 13388, 20799)
         )
     );
-    echo " <input type='submit' value='Check Prices' id='check'><br>
-    <input type='submit' value='Book this flight' id='book' formaction='book.php'>
-</form>";
+    echo "<button>Check Price</button><br>
+</form>
+<a href='book.php' target='_blank'><button>Book a Trip</button></a>";
     if(isset($_GET['from']) && isset($_GET['to'])){
         $from = $_GET['from'];
         $to = $_GET['to'];

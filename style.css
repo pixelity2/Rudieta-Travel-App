@@ -4,19 +4,45 @@ body {
     margin: 0;
     padding: 0;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: space-around;
 }
+
 .content {
     border: 1px solid blue;
     width: 25%;
     margin: 10px;
 }
-a{
+
+a {
     color: rgb(48, 76, 124);
     text-decoration: none;
 }
-img{
-    float: left;
+
+/* Base button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Active (clicked) state */
+button:active {
+    background-color: #003d7a;
 }

@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Form labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Form submit button */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Button active state */
+button:active {
+    background-color: #003d7a;
+}

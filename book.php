@@ -6,6 +6,7 @@
     <title>Travel Assistant - HOME</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div class="navbar">
@@ -62,10 +63,10 @@
                 <option value="SFR">San Francisco, US</option>
                 <option value="SPL">Sao Paulo, Brazil</option>
             </optgroup>
-        </select><br>
-        <input type='submit' value='Book this flight' id='book'>
+        </select><br><br>
+    <button>Book Flight</button>
     </form>
-
+    <a href="priceCheck.php" target="_blank"><button>Check Prices</button></a><br>
     <?php
     $priceModifier = 5;
     $prices = array(

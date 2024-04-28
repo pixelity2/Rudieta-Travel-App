@@ -16,6 +16,7 @@
           <li><a href="book.php">Book a Trip</a></li>
         </ul>
     </div>
-      <h1><a href="https://www.reddit.com/r/rudietatravel/">Forum on Reddit</a></h1>
+      <h1>Visit The Travel Forum in Reddit</h1>
+      <h1><a href="https://www.reddit.com/r/rudietatravel/" target="_blank">Forum on Reddit</a></h1>
 </body>
 </html>
