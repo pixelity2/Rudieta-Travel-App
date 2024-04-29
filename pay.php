@@ -74,7 +74,7 @@ $price = $priceModified;
 
 $checkout_session = \Stripe\Checkout\Session::create([
     "mode" => "payment",
-    "success_url" => "http://localhost/rudieta-travel-app/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to&departureDate=$departureDate",
+    "success_url" => "http://localhost/rudieta-travel-app-main/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to&departureDate=$departureDate",
     "locale" => "auto",
     "line_items" => [
         [
