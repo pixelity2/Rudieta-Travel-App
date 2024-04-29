@@ -43,10 +43,3 @@ button:hover {
 button:active {
     background-color: #003d7a;
 }
-#date{
-    display: none;
-    opacity: 0;
-}
-#my-form{
-    display: none;
-}

@@ -25,13 +25,13 @@
     $fullName = $_GET['fullName'] ?? '';
     $email = $_GET['email'] ?? '';
     $phoneNumber = $_GET['phoneNumber'] ?? '';
-    $date = $_GET['date'] ?? '';
+    $departureDate = $_GET['departureDate'] ?? '';
 
     echo "FROM: $from TO: $to <br>";
     echo "$days - Day Trip <br>";
     echo "Reservation name under $fullName <br>";
     echo "E-mail: $email <br> Phone Number: $phoneNumber <br>";
-    echo "Date: $date <br>"
+    echo "departureDate: $departureDate <br>"
     ?>
     <h2>You should be contacted in your e-mail with the receipt. </h2>
     <h2>Receipts are available 24 hours after the transaction.</h2>
@@ -44,7 +44,7 @@
         <input type="hidden" id="fullName" name="fullName" />
         <input type="hidden" id="email" name="email" />
         <input type="hidden" id="phoneNumber" name="phoneNumber" />
-        <input type="hidden" id="date" name="date" />
+        <input type="hidden" id="departureDate" name="departureDate" />
         <button id="my-form-button">Complete Booking</button>
         <p id="my-form-status"></p>
     </form>
@@ -90,9 +90,9 @@
             const fullNameParam = urlParams.get('fullName');
             const phoneNumberParam = urlParams.get('phoneNumber');
             const emailParam = urlParams.get('email');
-            const dateParam = urlParams.get('date');
+            const departureDateParam = urlParams.get('departureDate');
 
-            if (fromParam && toParam && daysParam && flyersParam && fullNameParam && phoneNumberParam && emailParam && dateParam) {
+            if (fromParam && toParam && daysParam && flyersParam && fullNameParam && phoneNumberParam && emailParam && departureDateParam) {
                 const fromInput = document.getElementById('from');
                 const toInput = document.getElementById('to');
                 const daysInput = document.getElementById('days');
@@ -100,7 +100,7 @@
                 const fullNameInput = document.getElementById('fullName');
                 const phoneNumberInput = document.getElementById('phoneNumber');
                 const emailInput = document.getElementById('email');
-                const dateInput = document.getElementById('date');
+                const departureDateInput = document.getElementById('departureDate');
 
                 fromInput.value = fromParam;
                 toInput.value = toParam;
@@ -109,7 +109,7 @@
                 fullNameInput.value = fullNameParam;
                 phoneNumberInput.value = phoneNumberParam;
                 emailInput.value = emailParam;
-                dateInput.value = dateParam;
+                departureDateInput.value = departureDateParam;
             }
         });
     </script>

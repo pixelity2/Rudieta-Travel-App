@@ -10,7 +10,7 @@ $flyers = $_GET['flyers'];
 $fullName = $_GET['fullName'];
 $email = $_GET['email'];
 $phoneNumber = $_GET['phoneNumber'];
-$date = $_GET['date'];
+$departureDate = $_GET['departureDate'];
 
 $prices = array(
     'SKP' => array(
@@ -74,7 +74,7 @@ $price = $priceModified;
 
 $checkout_session = \Stripe\Checkout\Session::create([
     "mode" => "payment",
-    "success_url" => "http://localhost/rudieta-travel-app/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to&date=$date",
+    "success_url" => "http://localhost/rudieta-travel-app/success.php?fullName=$fullName&email=$email&phoneNumber=$phoneNumber&flyers=$flyers&days=$days&from=$from&to=$to&departureDate=$departureDate",
     "locale" => "auto",
     "line_items" => [
         [

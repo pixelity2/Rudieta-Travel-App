@@ -64,7 +64,7 @@
                 <option value="SPL">Sao Paulo, Brazil</option>
             </optgroup>
         </select><br>
-        <input type="date" name="date" id="date" required><br>
+        <input type="date" name="departureDate" id="departureDate" required>
 <br><br>
     <button>Book Flight</button>
     </form>
@@ -181,7 +181,8 @@
 
         const minDate = `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day}`;
 
-        document.getElementById('date').setAttribute('min', minDate);
+        document.getElementById('departureDate').setAttribute('min', minDate);
+        
     </script>
 </body>
 </html>
